@@ -1,0 +1,344 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+	font-family: 'Open Sans';
+	font-weight: 300;
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+
+
+
+
+/*INICIO DO HEADER*/
+header{
+	padding: 15px 2%;
+	background-color: white;
+}
+
+.logo{
+	margin-left: 1%;
+	float: left;
+	font-family: 'Great Vibes';
+	font-size: 27px;
+}
+
+header nav{
+	float: right;
+	margin-right: 1%;
+}
+
+header nav.desktop-menu ul{
+	list-style-type: none;
+}
+
+header nav.desktop-menu li{
+	float: left;
+	margin: 12px 20px;
+}
+
+header nav.desktop-menu li a{
+	color: black;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: 'Open Sans';
+	font-weight: 300;
+	cursor: pointer;
+}
+
+nav.mobile-menu{
+	margin-top: 10px;
+	cursor: pointer;
+	display: none;
+	width: 32px;
+	height: 32px;
+	background-image: url('../images/menu.png');
+	background-size: 100% 100%;
+}
+
+nav.mobile-menu ul{
+	display: none;
+	position: absolute;
+	width: 40%;
+	color: white;  
+	list-style-type: none;
+	right: 12px;
+	top: 60px;
+	background-color: white;
+	text-align: center;
+	border-radius: 10px;
+	z-index: 1;
+}
+
+nav.mobile-menu ul li{
+	padding: 13px 0;
+}
+
+nav.mobile-menu ul li:last-child{
+	border: 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+nav.mobile-menu ul li:hover{
+	background-color: rgb(242,242,242);
+}
+
+nav.mobile-menu ul li a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Open Sans';
+	font-weight: 300;
+}
+/*FIM DO HEADER*/
+
+
+
+
+
+/*INICIO DA SESSAO 1*/
+section.sessao1{
+	padding: 30px 2%;
+}
+
+.sessao1 .sobre{
+	text-align: center;
+}
+
+.line-titulo{
+	max-width: 1000px;
+	margin:0 auto;
+	position: relative;
+	text-align: center;
+}
+
+.ln1{
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	top:23px;
+	background:black;
+}
+
+.line-titulo h2{
+	position: relative;
+	background: white;
+	display: inline-block;
+	text-align: center;
+	font-size: 30px;
+	padding:0 20px;
+	font-weight: 300;
+}
+
+.sobre img{
+	margin-top: 20px;
+	width: 400px;
+	height: 450px;
+}
+
+.historia{
+	margin: 0 auto;
+	text-align: left;
+	max-width: 900px;
+	width: 90%;
+}
+
+.historia h2{
+	font-weight: 300;
+	font-size: 25px;
+	margin-top: 15px;
+}
+
+.historia p{
+	font-size: 15px;
+	margin-top: 10px;
+}
+/*FIM DA SESSAO 1*/
+
+
+
+
+
+/*INICIO DA SESSAO 2*/
+.sessao2{
+	padding: 20px 2%;
+}
+
+.sessao2 > .container{
+	max-width: 700px;
+	display: flex;
+	align-items: center;
+	/*position: relative;*/
+	text-align: center;
+}
+
+.sessao2 .container .box-sobre h2{
+	font-size: 20px;
+	font-weight: 300;
+	color: white;
+}
+
+.sessao2 .container .box-sobre:nth-of-type(1){
+	width: 30%;
+	padding: 40px 2%;
+	background-color: #edabaf;
+}
+
+.sessao2 .container .box-sobre:nth-of-type(2){
+	width: 40%;
+	padding: 65px 2%;
+	background-color: #e68c91;
+	background-image: none;
+}
+
+.sessao2 .container .box-sobre:nth-of-type(3){
+	width: 30%;
+	padding: 40px 2%;
+	background-color: #edabaf;
+}
+/*FIM DA SESSAO 2*/
+
+
+
+
+
+/*INICIO DA SESSAO 3*/
+section.sessao3{
+	padding: 30px 2%;
+}
+
+.perfil{
+	display: flex;
+	flex-direction: row;
+	margin: 20px auto;
+	max-width: 800px;
+}
+
+.perfil img{
+	width: 300px;
+	height: 400px;
+}
+
+.descricao{
+	width: 70%;
+	margin-left: 30px;
+	margin-top: 50px;
+}
+
+.descricao h2{
+	color: #e68c91;
+	font-size: 25px;
+}
+
+.descricao p{
+	margin-top: 15px;
+	font-size: 15px;
+	line-height: 23px;
+}
+/*FIM DA SESSAO 3*/
+
+
+
+
+
+/*INICIO DO FOOTER*/
+.info{
+	background-color: #f8c4c8;
+	padding: 20px 2%;
+	text-align: center;;
+}
+
+.info-single{
+	float: left;
+	width: 33.3%;
+}
+
+.info-single p{
+	font-size: 15px;
+	font-weight: 300;
+	margin-top: 5px;
+}
+
+.info-single i{
+	margin-top: 10px;
+	color: black;
+	font-size: 30px;
+	padding: 0 10px;
+}
+/*FIM DO FOOTER*/
+
+
+
+
+
+/*INICIO DO RESPONSIVO*/
+@media screen and (max-width: 670px){
+	nav.desktop-menu{
+		display: none;
+	}
+
+	nav.mobile-menu{
+		display: block;
+	}	
+
+	section.sessao2 > .container{
+		flex-direction: column;
+	}
+
+	section.sessao2 .container .box-sobre:nth-of-type(1){
+		width: 90%;
+		max-width: 250px;
+		padding: 35px 2%;
+	}
+
+	section.sessao2 .container .box-sobre:nth-of-type(2){
+		width: 90%;
+		max-width: 300px;
+		padding: 55px 2%;
+	}
+
+	section.sessao2 .container .box-sobre:nth-of-type(3){
+		width: 90%;
+		max-width: 250px;
+		padding: 35px 2%;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.info-single{
+		float: none;
+		width: 100%;
+		padding: 15px 2%;
+	}
+}
+
+@media screen and (max-width: 750px){
+	.perfil{
+		display: block;
+		text-align: center;
+		max-width: none;
+	}
+
+	.descricao{
+		text-align: justify;
+		margin-left: 0;
+		margin-top: 10px;
+		width: 100%;
+		padding: 0 3%;
+	}
+}
+/*FIM DO RESPONSIVO*/

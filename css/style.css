@@ -1,0 +1,438 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+	font-family: 'Open Sans';
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+
+
+
+
+/*INICIO DO HEADER*/
+header{
+	padding: 15px 2%;
+	background-color: white;
+}
+
+.logo{
+	margin-left: 1%;
+	float: left;
+	font-family: 'Great Vibes';
+	font-size: 27px;
+}
+
+header nav{
+	float: right;
+	margin-right: 1%;
+}
+
+header nav.desktop-menu ul{
+	list-style-type: none;
+}
+
+header nav.desktop-menu li{
+	float: left;
+	margin: 12px 20px;
+}
+
+header nav.desktop-menu li a{
+	color: black;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: 'Open Sans';
+	font-weight: 300;
+	cursor: pointer;
+}
+
+nav.mobile-menu{
+	margin-top: 10px;
+	cursor: pointer;
+	display: none;
+	width: 32px;
+	height: 32px;
+	background-image: url('../images/menu.png');
+	background-size: 100% 100%;
+}
+
+nav.mobile-menu ul{
+	display: none;
+	position: absolute;
+	width: 40%;
+	color: white;  
+	list-style-type: none;
+	right: 12px;
+	top: 60px;
+	background-color: white;
+	text-align: center;
+	border-radius: 10px;
+}
+
+nav.mobile-menu ul li{
+	padding: 13px 0;
+}
+
+nav.mobile-menu ul li:last-child{
+	border: 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+nav.mobile-menu ul li:hover{
+	background-color: rgb(242,242,242);
+}
+
+nav.mobile-menu ul li a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Open Sans';
+	font-weight: 300;
+}
+/*FIM DO HEADER*/
+
+
+
+
+
+/*INICIO DA SESSÃO 1*/
+section.sessao1{
+	width: 100%;
+}
+
+.bg{
+	padding: 30px 2%;
+	height: 70vh;
+	min-height: 600px;
+	background-image: url('../images/capa-bolo.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.slogan{
+	float: right;
+	max-width: 50%;
+	margin: 100px 2%;
+}
+
+.slogan h2{
+	font-weight: 300;
+	font-size: 55px;
+	line-height: 50px;
+}
+
+.slogan p{
+	font-weight: 300;
+	font-size: 15px;
+	margin-top: 10px;
+}
+/*FIM DA SESSÃO 1*/
+
+
+
+
+
+/*INICIO DA SESSAO 2*/
+.sessao2 .produtos{
+	padding: 30px 0;
+}
+
+.produtos h2{
+	text-align: center;
+	font-weight: 300;
+	font-size: 25px;
+}
+
+.produtos-single{
+	float: left;
+	width: 33.3%;
+	padding: 30px 40px;
+	text-align: center;
+}
+
+.produtos-single img {
+	width: 180px;
+	height: 200px;
+	border-radius:10px;
+}
+
+.produtos-single h2{
+	font-size: 20px;
+	font-weight: 300;
+	margin: 10px 0;
+}
+
+.produtos-single p{
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.produtos-single .btn{
+	display: block;
+	width: 120px;
+	border: 1px solid black;
+	border-radius: 20px;
+	font-size: 15px;
+	font-weight: 300;
+	text-align: center;
+	cursor: pointer;
+	margin: 20px auto;
+	line-height: 35px;
+	text-decoration: none;
+	color: black;
+}
+
+.btn:hover{
+	background-color: rgb(235,235,235);
+}
+/*FIM DA SESSAO 2*/
+
+
+
+
+
+/*INICIO DA SESSAO 3*/
+.sessao3 .depoimentos{
+	background-color: #a86dad; 
+	color: white;
+	font-weight: 300;
+	text-align: center;
+	padding: 30px 3%;
+}
+
+.depoimentos  h2{
+	font-weight: 300;
+	font-size: 25px;
+}
+
+.depoimento-single{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.depoimento-single p{
+	margin-top: 20px;
+	font-size: 15px;
+}
+
+.navigation{
+	margin: 20px auto;
+	width: 100%;
+	max-width: 400px;
+}
+
+.arrows{
+	float: left;
+}
+
+.arrows i{
+	font-size: 40px;
+	margin: 10px 15px;
+	cursor: pointer;
+}
+
+.nome-depoimento{
+	float: right;
+}
+
+.nome-depoimento p{
+	font-weight: 400;
+}
+/*FIM DA SESSÃO 3*/
+
+
+
+
+
+/*INICIO DA SESSÃO 4*/
+.sessao4 .social{
+	padding: 40px 20%;
+	text-align: center;
+}
+
+.social h2{
+	font-weight: 300;
+	font-size: 25px;
+	text-align: center;
+}
+
+.social img{
+	width: 90%;
+	margin-top: 20px;
+}
+/*FIM DA SESSÃO 4*/
+
+
+
+
+
+/*INICIO DA SESSÃO 5*/
+.servicos{
+	display: flex;
+	flex-direction: row; 
+}
+
+.box1, .box2{
+	padding: 20px 7%; 
+	margin-bottom: 30px;
+	text-align: center;
+	font-weight: 300;
+}
+
+.box1{
+	width: 50%;
+	border-right: 1px solid black;
+}
+
+.box1 h2{
+	font-weight: 300;
+	font-size: 25px;
+}
+
+.box1 p{
+	font-size: 15px;
+	margin-top:10px;
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+
+.box2{
+	width: 50%;
+}
+
+.box2 i{
+	font-size: 50px;
+}
+
+.box2 p{
+	margin-top: 10px;
+	font-size: 17px;
+}
+/*FIM DA SESSÃO 5*/
+
+
+
+
+
+/*INICIO DO FOOTER*/
+.info{
+	background-color: #f8c4c8;
+	padding: 20px 2%;
+	text-align: center;;
+}
+
+.info-single{
+	float: left;
+	width: 33.3%;
+}
+
+.info-single p{
+	font-size: 15px;
+	font-weight: 300;
+	margin-top: 5px;
+}
+
+.info-single i{
+	margin-top: 10px;
+	color: black;
+	font-size: 30px;
+	padding: 0 10px;
+}
+/*FIM DO FOOTER*/
+
+
+
+
+
+/*INICIO DO RESPONSIVO*/
+@media screen and (max-width: 810px){
+	.slogan{
+		text-align: center;
+		max-width: 100%;
+		margin: 60px 8%;
+	}
+
+	.slogan h2{
+		font-size: 45px;
+	}
+
+	.slogan p{
+		text-align: center;
+	}
+
+	.produtos-single{
+		float: none;
+		width: 100%;
+		padding: 30px 10%;
+	}
+
+	.social img{
+		width: 100%;
+	}
+
+	.social h2{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.servicos{
+		display: block;
+	}
+
+	.box1,.box2{
+		width: 100%;
+	}
+
+	.box1{
+		border: none;
+	}
+
+	.info-single{
+		float: none;
+		width: 100%;
+		padding: 15px 2%;
+	}
+}
+
+@media screen and (max-width: 670px){
+	nav.desktop-menu{
+		display: none;
+	}
+
+	nav.mobile-menu{
+		display: block;
+	}
+
+	.arrows{
+		float: none;
+		text-align: center;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.arrows i{
+		margin: 0 15px;
+	}
+
+	.nome-depoimento{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+}
+/*FIM DO RESPONSIVO*/
